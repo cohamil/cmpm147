@@ -36,13 +36,13 @@ function main() {
   
   const template = `After defeating the demon king, you have saved the world and have now earned your treasure. You notice a chest and open it with excitement, discovering:
   
-  The $pre of $post
-  Ability: With this item equipped, you can $ab1 and can $ab2.
+The $pre of $post
+Ability: With this item equipped, you can $ab1 and can $ab2.
   
-  You are $reaction with the possibility of using this item. Additionally, you find a $item inside the chest.
-  With the loot from the chest, you are now determined to accomplish your next goal:
+You are $reaction with the possibility of using this item. Additionally, you find a $item inside the chest.
+With the loot from the chest, you are now determined to accomplish your next goal:
   
-  $action the $thing
+$action the $thing
   `;
   
   

@@ -1,3 +1,14 @@
+document, body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(207, 225, 231);
+  font-family: "Open Sans", sans-serif;  
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
 h1, h2 {
   margin: 0;
   padding: 0;
@@ -7,17 +18,18 @@ h1, h2 {
 
 #content {
   width: calc(100% - 30px);
-  margin: 10px;080;
+  margin: 10px;
   padding: 10px;
-  border: solid 1px #808;
+  border: solid 1px rgb(4, 61, 78);
   font-family: sans-serif;
 }
 
 .minor-section {
-  margin: 10px;
   padding: 10px;
   border: solid 1px #A0A0A0;
   border-radius: 10px;
+  background-color: rgb(175, 221, 238);
+  margin-bottom: 10px;
 }
 
 .minor-section h2 {
