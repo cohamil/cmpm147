@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 2 - Living Impressions</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -32,30 +32,47 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 2 - Living Impressions</h1>
 
 			<div class="minor-section">
 				<div id="canvas-container">
-					<!-- canvas will be added here -->
+					
 				</div>
                 <div class="fullscreen-box">
                     <button id="fullscreen">Fullscreen</button>
                 </div>
 			</div>
 
-			<div class="minor-section">
-				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
-			</div>
-
-			<div class="minor-section">
-				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+			<div class="two-column">
+				<div class="minor-section">
+					<h2>Description</h2>
+					<div class="image-wrapper">
+						<img src="https://cdn.glitch.global/974266cd-73ae-48af-bb85-b735840667f0/sauron.png?v=1713321118858">
+					</div>
+					<a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)">Source</a>
+					<p>Generative image based on the Eye of Sauron from the Lord of the Rings film series.</p>
+				</div>
+	
+				<div class="minor-section">
+					<h2>Technical</h2>
+					<p>Relation to inspring image:</p>
+                    <ul>
+                        <li>Color: Colors are inspired by the original image, including the color of the lava, eye, tower, clouds, and general landscape.</li>
+                        <li>Primitives: The clouds are rendered with the "ellipse" primitive.</li>
+                        <li>Polygons: The lava is generated from a set of points using the "curvedVertex" function.</li>
+                        <li>Composition: Different random seed values lead to differently shaped mountains and clouds.</li>
+                        <li>Life: The position of the eye's pupil is changed relative to the mouse cursor, giving the effect that the eye is watching the cursor.</li>
+                    </ul>
+				</div>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>With this assignment, the hardest part was getting used to using P5.js, as I didn't have any experience with it beforehand. Additionally, trying to create randomness was difficult
+					because of the fact that the "draw" function is ran every frame, meaning that in the case of the clouds the positions needed to be saved in an array. This added a layer of 
+					complexity to the project. Overall, I enjoyed using P5.js to create this image, and am happy with the result. If I decided to spend more time on it, I would try and work on 
+					creating randomness with the streams of lava, as I believe that the position of the lava being decided by the seed would be a good touch.
+				</p>
 			</div>
 
 		</section>
