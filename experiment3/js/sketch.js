@@ -331,7 +331,7 @@ var myp5 = new p5((o) => {
     seed2 = (seed2 | 0) + 1109;
     o.randomSeed(seed2);
     o.noiseSeed(seed2);
-    o.select("#seedReport").html("seed " + seed2);
+    o.select("#seedReport2").html("seed " + seed2);
     regenerateGrid22();
   }
   
