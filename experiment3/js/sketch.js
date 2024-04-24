@@ -334,7 +334,7 @@ var myp5 = new p5((o) => {
     o.select("#seedReport2").html("seed " + seed2);
     regenerateGrid22();
   }
-  
+   
   function regenerateGrid22() {
     o.select("#asciiBox2").value(gridToString2(generateGrid2(numCols2, numRows2)));
     reparseGrid2();
