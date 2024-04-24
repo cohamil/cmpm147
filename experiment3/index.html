@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Experiment X - Subject/Topic</title>
+	<title>Experiment 3 - Alternate Worlds</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
 	<meta charset="UTF-8" />
@@ -32,30 +32,77 @@
 	<main id="content">
 		<section>
 
-			<h1>Experiment X - Subject/Topic</h1>
+			<h1>Experiment 3 - Alternate Worlds</h1>
 
 			<div class="minor-section">
-				<div id="canvas-container">
-					<!-- canvas will be added here -->
+				<div id="p5sketch1">
+					<button id="reseedButton">reseed</button>
+					<span id="seedReport"></span>
+					<hr />
+					<span id="canvas-container1">
+						<!-- canvas for sketch 1 will be added here -->
+					</span>
+					<textarea cols="20" rows="20" id="asciiBox" style="opacity: 0.5; letter-spacing: 1ex; width: 320px; margin: 10px; font-family: monospace;"></textarea>
+					<p>Codes:</p>
+                    <ul>
+                        <li>underscore: "_"         background</li>
+                        <li>period: "."             room ground</li>
+                        <li>line: "|"               wall</li>
+                        <li>tilda: "~"              water</li>
+                        <li>hash: "#"               chest</li>
+                    </ul>
+					<p>
+						(using tiles from <a href="https://thkaspar.itch.io/micro-tileset-overworld-dungeon">Micro Tileset - Overworld & Dungeon</a> by thkaspar)
+					</p>
+				</div>
+				<hr />
+				<div id="p5sketch2">
+					<button id="reseedButton2">reseed</button>
+					<span id="seedReport2"></span>
+					<hr />
+					<span id="canvas-container2">
+						<!-- canvas for sketch 2 will be added here -->
+					</span>
+					<textarea cols="20" rows="20" id="asciiBox2" style="opacity: 0.5; letter-spacing: 1ex; width: 320px; margin: 10px; font-family: monospace;"></textarea>
+					<p>Codes:</p>
+                    <ul>
+                        <li>underscore: "_"         dark grass</li>
+                        <li>period: "."             light grass</li>
+                        <li>line: "|"               dirt</li>
+                        <li>tilda: "~"              water</li>
+                        <li>carrot: "^"             flower</li>
+                    </ul>
+					<p>
+						(using tiles from <a href="https://thkaspar.itch.io/micro-tileset-overworld-dungeon">Micro Tileset - Overworld & Dungeon</a> by thkaspar)
+					</p>
 				</div>
                 <div class="fullscreen-box">
                     <button id="fullscreen">Fullscreen</button>
                 </div>
-			</div>
+            </div>
 
 			<div class="minor-section">
 				<h2>Description</h2>
-				<p>What are you trying to acomplish with this experiment?</p>
+				<p>With this project, I was tasked with creating a Dungeon generator and editor, with random room creation and water/chest spawning. Additionally, an Overworld generator and editor, with random biome generation. Enter codes into the ASCII representation to change the rendering of the overworld.
+				</p>
+				
 			</div>
 
 			<div class="minor-section">
 				<h2>Technical</h2>
-				<p>Describe in detail what you did technically and how it works?</p>
+				<p>Using the tileset linked above, I created a generative dungeon/biome generator according to a graphed ASCII representation of the rendered image. 
+					Once the page loads, the biome/dungeon is generated, then rendered many times a second, allowing the 
+					user to change the ASCII represenation. With this functionality, an editor is provided to directly enter the codes listed and change the render.
+				</p>
 			</div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>Each person that worked on the code should reflect on the process, the difficulties, and the successes of the experiment.</p>
+				<p>This was a great project for getting me to think about how procedural generation can be used to create landscapes. One of the most difficult parts of this
+					project was creating the overall style of both the dungeon and overworld, as I am not an artist and had to try out a bunch of different variations of the 
+					tiles provided in the tileset. Ultimately, I feel that this project is successful in bringing life and random generation to both the rendered images of 
+					dungeon and overworld.
+				</p>
 			</div>
 
 		</section>
